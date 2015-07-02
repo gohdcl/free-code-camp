@@ -1,0 +1,16 @@
+Elements
+  DOM Manipulation
+    A. Live editing of HTML and CSS in the Elements panel
+    B. Inspect element opens the element in the Dev Tools
+      a. Double click on the element to live edit it
+      b. Clicking and dragging the element moves it on the page
+      c. Right click for more options
+    C. Styles
+      a. Shows CSS rules for active element
+      b. Enable/disable properties
+      c. Edit rules for pseudo-classes
+      d. Link directly to CSS source
+      e. Add new styles with the + icon
+      f. Toggling element state is possible with the icon beside +
+Sources
+

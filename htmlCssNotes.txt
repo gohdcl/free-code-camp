@@ -1,0 +1,15 @@
+border-radius: 50%; // CSS to make an element a perfect circle
+
+color: red !important; // CSS to make this line highest in heirarchy
+
+<a href="#"></a> // HTML dead link; useful for jQuery
+
+<input type="text" required> // HTML for text-input; required makes adding a value mandatory
+
+Definition: padding is the space between an element and its border
+
+Definition: margin is the space between an element's border and the surrounding elements; note, a negative margin expands an element
+
+padding: 40px 20px 20px 40px; // CSS clockwise notation: top, right, bottom, left
+
+
