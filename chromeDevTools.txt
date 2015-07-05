@@ -13,4 +13,90 @@ Elements
       e. Add new styles with the + icon
       f. Toggling element state is possible with the icon beside +
 Sources
-
+  Sources Panel
+    A. Modify application source files
+      a. Right click => Local modifications shows timestamp of changes
+    B. Export Changes
+      a. Right click => save as
+    C. Track file versions
+      a. Apply revisions and revert
+Console
+  JavaScript Debugging
+    A. console.log
+      a. Can take a JS object as an argument
+      b. console.assert(boolean);
+        1. If boolean is true, proceeds undefined
+        2. If boolean is false, throws a console.error
+  Examining Exceptions
+    A. Expanding an error shows the stack trace that caused the error
+      a. Clicking on the line number will take you to the line where the error occurred
+    B. Calling the function from the console shows what it returns
+  Element Selector Shortcuts
+    A. Instead of calling document.querySelector, etc, you can call $ (bling) like in jQuery
+    B. Using jQuery overwrites the devtools bling, though
+    C. The console keeps a history of elements that are selected like indices, $0 being the most recent, $2 being three back, etc.
+Debugging
+  Pause on Exceptions
+    A. The stop combined with pause icon
+    B. Pretty print mode (the {} at the bottom of the source file)
+    C. Clicking the pause on exception button a second time sets it to pause only on uncaught exceptions
+    D. Clicking on the left margin of the source code sets a breakpoint
+      a. execution controls
+        1. Resume, (play button) runs code until next breakpoint or end of code
+        2. Step over, (arc arrow) executes the line then goes to the next line
+        3. Step into, (down arrow) step into any method on the highlighted line
+        4. Step out, (up arrow) return from the current function into its caller
+        5. Remove all breakpoints
+  Local Storage
+    A. Resources => Local Storage
+      a. Shows what variables and values are being held in local storage
+      b. You can make changes to those values in local storage
+      c. Reloading the display/page will reflect those changes
+Network
+  Network display
+    A. Shows how long resources take to download
+      a. Network code 304 signifies loading from cache (already downloaded)
+      b. To force redownload, hold shift while refreshing
+    B. Disabling cache
+      a. Incognito mode
+      b. Dev tool settings => uncheck cache
+    C. Reading the chart
+      a. Translucent bars are lag time
+      b. Solid bars are downloading time
+      c. Endpoint are when all data from the request are received
+      d. Colors indicate different file types
+        1. HTML file tends to load first, and other resources (css, js) are requested when the HTML file is read
+      e. Blue line signifies DOM content loaded event firing
+      f. Red line signifies when everything is loaded
+  Network Performance
+    A. Google Pagespeed Insights
+    B. Optimizations
+      a. Minify/merge JS files
+      b. Render page (HTML + CSS) before large javascript is loaded (load JS asyncronously), <script async src="script.js" type="text/javascript"></script>
+      c. Remove references to missing assets
+      d. Scaling images down to appropriate size; use .PNG instead of JPEG
+Profile
+  Frame View
+    A. Aside from network latency, slow code in the client side may also slow down performance
+      a. HTML loading
+      b. Style calculation and layout
+      c. JavaScript execution
+      d. Painting image to screen
+    B. Framerate - number of frames that are rendered on the screen per second
+    C. Frame View shows where fps may suffer
+      a. Timeline => Frames
+      b. The bottom line shows 16.6ms, which is 60fps
+      c. Colors represent different activities
+  CPU Profile
+    A. Shows which processes take up a lot of CPU time
+Memory Profiling
+  Memory Leaks
+    A. When an application takes more and more memory on a computer and eventually slows down the computer or crashes
+    B. Timeline => Memory
+    C. Sign of a memory leak is that the program takes more and more memory over time
+    D. Healthy applications do not grow in memory usage
+  Pinpointing Leaks
+    A. Heap Snapshots
+      a. Profile => Heap Snapshot
+      b. Take two snapshots, and change view to comparison
+      c. Detached DOM elements highlighted in red signifies objects that have not been garbage collected
