@@ -1,0 +1,42 @@
+Regular Expressions (RegEx)
+  Everything is essentially a character
+  Write patterns to match a specific sequence of characters (string)
+  Digits
+    \d = any digit 0-9
+    \d\d\d = 3 digits in a row
+  Wildcard
+    . = wildcard, can match any single character
+    \. = matching a period (. is escaped)
+  Matching specific characters
+    inside [], i.e. [cmf] selects all c, m, and f's
+  Excluding specific characters
+    [^], i.e. [^b].. matches dog and cog, but excludes bog
+  Character Ranges
+    Using a dash, i.e. [a-z], case sensitive
+    Can be combined with exclusion, i.e. [^0-5]
+  Repetition
+    Spell out how many characters to find, i.e. \d\d\d (3 digits)
+    Use curly braces, i.e. \d{1,5} (1 to 5 digits)
+  Kleene star and Kleene plus
+    .* = 0 or more of the character it follows (any number of)
+    .+ = 1 or more of the character it follows (at least one of)
+  Optionality
+    ? = match either zero or one of the preceding character or group
+    i.e. ab?c matches either abc or ac, because b is optional
+  Whitespace
+    space = _
+    tab = \t
+    new line = \n
+    carriage return (Windows) = \r
+    general whitespace = \s
+  Only
+    ^query$ = match a line that contains only query, or starts and ends with query
+  Capturing a group
+    () captures whatever is inside it
+    You can put a capture inside a capture, which will capture only the group specified in the inner ()
+  Conditionals
+    | = logical or, or the pipe
+  Other special characters
+    \w specifies any alphanumeric character, which is [a-zA-Z-0-9_] (underscore is included)
+    Opposites are specified using uppercase letters
+      i.e. \D is any non-digit, \S is any non-whitespace
