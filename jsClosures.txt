@@ -1,0 +1,1 @@
+Closures are functions that remain available even after the surrounding context has returned. i.e. assigning a function object to an array in the global scope, which can be called even after the function that it is inside of has already returned. Each closure returns to the scope that it was defined in.

@@ -1,0 +1,16 @@
+Scope
+  Lexical Scope
+    1. Regions of source code where one can refer to a variable name without getting errors
+    2. The global scope encompasses all functions in a program
+    3. A new lexical scope is generated for each new function definition
+      a. It's possible to access variables from the broader lexical scope, i.e. other functions encompassing the current lexical scope and the global scope
+    4. Variables missing the var statement during initialization get assigned to the global scope, not the scope they are declared in
+    5. Curly braces used for block statements such as if/else or loops do not create a new lexical scope
+  Execution contexts (In-Memory Scopes)
+    1. Built as the code runs, not as it's typed
+    2. Each run of a function creates a new execution context
+    3. Interpreter starts by building a storage system for the global scope, which holds all the global variables; the interpreter builds new key-value mapping inside the execution context
+    4. In memory scopes and in-memory objects look similar, but are kept separate by the interpreter. In memory scopes are unaccessable except to the interpreter, whereas in-memory objects are easily accessable by the programmer. i.e. you can never create an array full of
+    5. As long as a function is running, that function becomes the interpreter's new current context
+    6. Whenever a variable lookup occurs, the interpreter starts with the current context and expands its search outwards
+    7. Two in-memory functions created by invoking a function twice would fail a === test that compares them, because they have different identities

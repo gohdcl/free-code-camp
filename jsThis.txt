@@ -1,0 +1,18 @@
+this
+  this is a parameter
+  this cannot have its name assigned
+  values are bound to this in different ways from regular parameters
+  In the context of this appearing in a function definition, it is not:
+    bound to the function object it appears in
+    bound to a new instance of the function object
+    bound to an object that happens to have that function as a property; a function can be a property of two different objects
+    bound to an object created by the literal this appears in
+    bound to the in-memory scope a function call creates
+  It IS bound to the object found to the left of the . where the containing function is called
+  Note: Input parameters to a function only have bindings when that function is actually running
+  In the case of this being called with no object to reference, it refers to the global object, similar to how undefined is assigned to parameters that have no arguments
+  function.call() allows for an additional (first) parameter to be bound to this; using .call on a function that is a property of an object can also redirect this from that object to another, i.e. red.fn.call(y, g, b); will redirect this from the object red to the object yellow
+  The only context that matters in determining which object this refers to is at the moment the function is invoked
+  Be careful when passing a function as input into another function, because you have little control over what the parameter bindings will be, including the binding for the parameter this
+  One technique for callbacks is to use an anonymous function for the callback function, then invoke the object's method in the body
+  Using new and constructor functions causes this to bind to the new object
