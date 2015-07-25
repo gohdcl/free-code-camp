@@ -1,0 +1,25 @@
+Classes
+  Class vs. Decorator
+    1. Classes build the objects that they augment, whereas decorators accept a pre-existing object to augment as an input
+  Class Conventions
+    1. Conventional to name classes/constructor functions with Capital case
+    2. Each object that is created by a class constructor is called an instance
+    3. When the constructor function is called to build a new object, it's called instantiating the object
+    4. Functions can store properties, because they are objects too.
+      a. Invoking a function has no interaction with the properties of that function. i.e. putting an object outside of the constructor that is a property of that constructor won't cause that property to execute if the function is invoked
+  Prototypal Classes
+    1. Use Class.prototype to delegate all of a class' shared methods.
+      a. Use Object.create(Class.prototype);
+      b. This skips an expensive step of copying all of an objects properties over when a new one is created
+      c. .prototype is built into JS as the container class methods are added to
+  Misconceptions about .prototype
+    1. The .prototype container isn't particularly interesting. It's just the name for the container
+    2. Object instances do not delegate failed lookups to .prototype
+    3. The .prototype container has a .constructor property, which refers back to the class that the .prototype holds methods for
+  Pseudo-classical Object Pattern
+    1. Mimics class style of other programming languages like C++ and Java
+    2. Every Object is created from a prototype and returned
+    3. The keyword new causes a function to run in constructor mode
+      a. The interpreter inserts some code to instantiate the new object and return it
+      b. It inserts ```this = Object.create(Object.prototype);``` at the beginning, and  ```return this;``` at the end of the constructor
+

@@ -1,0 +1,15 @@
+Prototypes
+  Prototype Chain
+    1. Whenever a property lookup on an object occurs, the interpreter checks whether that object has that property. If so, it returns the value associated with the property.
+    2. If that object doesn't have the property, the interpreter returns undefined
+  One-time Property Copying
+    1. Extend functions or copying using a for loop
+      a. The copying only happens once, and if one of the objects is modified afterwards, those modifications do not sync between those objects
+    2. Ongoing lookup-time delegation, i.e. var newObj = Object.create(oldObj);
+      a. If a lookup fails on the new object, it expands up the prototype chain to its prototype object
+  The Object prototype
+    1. There exists a prototype object in JavaScript from which all other objects derive certain properties/methods
+    2. Its methods can be called by child objects due to how the this keyword works, i.e. newObj.toString(); performs the toString method on newObj even though it is a method of the Object prototype
+  The Array Prototype
+    1. The Array prototype is a subclass of the Object prototype
+    2. It has its own properties, but also delegates to the Object prototype for some other properties

@@ -1,0 +1,15 @@
+Object Decorator Pattern
+  Code Reuse
+    1. If you find yourself repeating code in separate places, you can factor out duplicate code into a library.
+    2. This is especially good for object oriented programming, where multiple similar objects are usually manipulated the same way
+      a. Makes it much easier to refactor code later; just change the general function that acts on each object instead of having to change the logic in multiple places for multiple objects
+      b. This will make coding faster when a method/function is complicated or has multiple steps
+  Decorator Function
+    1. Takes an object as an input, augments the object by adding a property or functionality to it, then returns the object
+    2. Names of decorator functions are often adjectives
+  Object Comparison
+    1. Comparing two objects of the same class with === will always return false, because each object has its own identity, even if all of its properties are the same as another object's
+    2. This applies to function objects as well
+  Putting methods inside objects
+    1. Takes more memory, since a new method is generated when each new object is constructed
+    2. However, this allows each method to have its own unique closure scope
