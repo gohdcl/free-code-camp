@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="keywords" content="Programming, Web Development, HTML, CSS, JavaScript, Responsive, Git, Seattle, Bootstrap">
+  <meta name="author" content"Daniel Goh">
+  <meta name="description" content="Daniel Goh's Responsive Portfolio Page">
+
+  <!-- jQuery from Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Bootstrap from MaxCDN -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+  <title>Daniel Goh's Portfolio</title>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" id="main-nav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-nav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://github.com/gohdcl">Daniel Goh</a>
+      </div>
+      <div class="collapse navbar-collapse" id="collapse-nav">
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="active"><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container-fluid" id="home">
+    <div class="row">
+      <h1>Daniel Goh</h1>
+      <h2>Full Stack Web Developer</h2>
+    </div>
+    <div class="row">
+
+      <a href="https://twitter.com/DanielCGoh"><button type="button" class="btn btn-primary" aria-pressed="false"><img src="img/glyphicons_free/social/png/social-32-twitter.png" alt="twitter glyphicon">Twitter</button></a>
+
+      <a href="https://github.com/gohdcl"><button type="button" class="btn btn-primary" aria-pressed="false"><img src="img/glyphicons_free/social/png/social-22-github.png" alt="github glyphicon">Github</button></a>
+
+      <a href="https://linkedin.com/in/DanielCGoh"><button type="button" class="btn btn-primary" aria-pressed="false"><img src="img/glyphicons_free/social/png/social-18-linked-in.png" alt="linked in glyphicon">LinkedIn</button></a>
+
+    </div>
+  </section><!-- #home -->
+
+  <section class="container-fluid" id="about">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Hi, I'm Daniel!</h1>
+      </div><!-- col-md-6 -->
+      <div class="col-md-6">
+        <p>I'm a web applications developer, in addition to my other creature types (software engineer, all-around nerd, and entrepreneur). I live, work, and play in Seattle, WA, USA.</p>
+      </div><!-- col-md-6 -->
+    </div><!-- row -->
+  </section><!-- #about -->
+
+  <section class="container-fluid" id="portfolio">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Portfolio</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <a href="http://www.pinktanuki.com">
+          <div id="ptn-image">
+            <img src="img/ptn.jpg" alt="Pink Tanuki Screenshot"></div>
+          <div class="dark-bg">
+            <h2>Pink Tanuki Nails</h2>
+          </div><!-- #ptn-image -->
+        </a>
+      </div><!-- col-md-4 -->
+      <div class="col-md-4">
+        <a href="http://thepartydialect.com">
+          <div id="tpd-image"><img src="img/tpd.jpg" alt="TPD Screenshot"></div>
+          <div class="dark-bg">
+            <h2>The Party Dialect</h2>
+          </div>
+        </a>
+      </div><!-- col-md-4 -->
+      <div class="col-md-2"></div>
+    </div><!-- row -->
+  </section><!-- #portfolio -->
+
+
+  <section class="container-fluid" id="contact">
+    <h1>Contact Me</h1>
+    <h2>gohdcl[at]gmail.com
+  </section><!-- #contact -->
+
+  <footer class="container-fluid">
+    <ul>
+
+      <li><a class="nav-link" href="#home">Home</a></li>
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+
+    </ul>
+
+    <small>&copy; Daniel Goh 2015, All Rights Reserved</small>
+    <script type="text/javascript" src="js/script.js"></script>
+  </footer>
+</body>
+</html>

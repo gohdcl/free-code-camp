@@ -1,0 +1,179 @@
+
+body {
+  padding-top: 50px;
+  position: relative;
+}
+
+/*Main Nav Styles*/
+#main-nav {
+
+}
+/*End Main Nav Styles*/
+/*Home Styles*/
+#home {
+  text-align: center;
+  background: url(../img/laptop-lg.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  height: 900px;
+}
+
+h1, h2 {
+  font-family: "Play";
+  color: #000000;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 5.0rem;
+}
+
+#home h1 {
+  padding-top:20.0rem;
+}
+
+#home a {
+  color: #FFFFFF;
+}
+
+#home button {
+  margin-top: 2.0rem;
+}
+
+#home button img {
+  margin-right: 0.5rem;
+}
+/*End Home Styles*/
+/*About Styles*/
+#about {
+  background: url(../img/seattle-lg.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  height: 900px;
+}
+
+#about .col-md-6 {
+  padding-top: 10.0rem;
+}
+#about p {
+  padding-top: 2.5rem;
+}
+#about h1 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#about p {
+  font: 2.0rem "Play", sans-serif;
+  color: #FFFFFF;
+  vertical-align: middle;
+}
+/*End About Styles*/
+/*Portfolio Styles*/
+#portfolio {
+  padding-top: 10.0rem;
+  height: 900px;
+  background: url(../img/office-lg.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 900px;
+}
+
+#portfolio .col-md-12 {
+  text-align: center;
+}
+
+#portfolio .col-md-4 {
+  text-align: center;
+  margin-bottom: 2.0rem;
+}
+
+#portfolio img {
+  /*Images are bounded by their parent elements*/
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#portfolio a:hover {
+  text-transform: uppercase;
+}
+
+#portfolio a:hover, #portfolio a:focus {
+  text-decoration: none;
+}
+
+.dark-bg {
+  background-color: #000000;
+}
+
+.dark-bg h2 {
+  color: #FFFFFF;
+}
+/*End Portfolio Styles*/
+/*Contact Styles*/
+#contact h1 {
+  font-family: "Play";
+}
+/*End Contact Styles*/
+/*Footer Styles*/
+footer {
+  padding-bottom: 20px;
+}
+
+footer ul {
+  margin: 2.0rem 0 2.0rem 0;
+}
+
+footer li {
+  display: inline;
+  text-decoration: none;
+}
+footer a {
+  padding-right: 3.0rem;
+  color: #000000;
+}
+
+footer a:hover, footer a:focus {
+  color: #0000FF;
+  text-decoration: none;
+}
+/*End Footer Styles*/
+/*Mobile Styles*/
+@media (max-width: 767px){
+
+  body {
+    padding-top: 50px;
+  }
+
+  #main-nav a {
+    text-align: right;
+  }
+
+  #home {
+    background-color: #000000;
+    background-image: url(../img/laptop-md.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+
+  }
+
+  #home h1 {
+    padding-top: 3.0rem;
+  }
+
+  #about {
+    background-image: url(../img/seattle-md.jpg);
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #about h1 {
+    padding-top: 10.0rem;
+  }
+
+  #portfolio {
+    background: url(../img/office-md.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+  }
+}
