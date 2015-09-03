@@ -1,0 +1,46 @@
+body {
+  font-family: "Play", sans-serif;
+  background-image: url(../img/dark_embroidery.png);
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 4.0rem;
+}
+
+p {
+  font-size: 2.0rem;
+}
+
+.btn {
+  background-color: #CCFFDD;
+  font-size: 3.0rem;
+}
+
+.row {
+  text-align: center;
+  margin: 3.0rem 0;
+}
+
+.quote-target {
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  padding: 5.0rem;
+  opacity: 0.5;
+}
+
+#quote-text {
+  color: #000000;
+  opacity: 1;
+  font-size: 2.0rem;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="keywords" content="Quotes, Random, Programming, Web Development, HTML, CSS, JavaScript, Responsive, Git, Bootstrap">
+  <meta name="author" content"Daniel Goh">
+  <meta name="description" content="A Random Quote Generator">
+
+  <!-- jQuery from Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Bootstrap from MaxCDN -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+  <title>Random Quote Generator</title>
+</head>
+<body>
+  <section class="container-fluid">
+    <div class="row">
+      <h1>Quote Generator</h1>
+      <p>Here are some great quotes. Enjoy!</p>
+      <button class="btn" id="get">Get a Quote</button>
+    </div><!-- row -->
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 quote-target">
+        <p id="quote-text"></p>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+    <button class="btn" id="tweet">Tweet This Quote</button>
+    </div>
+  </section>
+  <footer>
+    <script type="text/javascript" src="js/script.js"></script>
+  </footer>
+</body>
