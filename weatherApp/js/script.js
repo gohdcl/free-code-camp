@@ -37,7 +37,7 @@ function getLoc(callback) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
 
-    return callback(latitude, longitude);
+    callback(latitude, longitude);
   } // end success()
 
   // on error, display an error

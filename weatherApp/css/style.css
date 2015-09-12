@@ -1,17 +1,22 @@
 .col-md-12,
 .col-md-4,
-.align-center {
+.align-center,
+footer {
   text-align: center;
+}
+
+footer {
+  padding-bottom: 3.0rem;
 }
 
 @media screen and (min-width: 768px) {
 
   .align-right {
-    text-align: right;
+    float: right;
   }
 
   .align-left {
-    text-align: left;
+    float: left;
   }
 
 }
